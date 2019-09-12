@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Podcaster</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+</head>
+<body>
+	<nav class="main-menu">
+        <ul>
+            <li>
+                <a href="#" class="logo-img">
+                    <img src="images/logo.png" alt="">
+                    <span class="nav-text">
+                           PODCAST
+                    </span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="index.html" class="line-icons">
+                    <span class="lnr lnr-home"></span>
+                    <span class="nav-text">
+                           Home
+                   </span>
+                </a>
+            </li>
+            <li class="has-subnav">
+                <a href="browse.html" class="line-icons">
+                    <span class="lnr lnr-film-play"></span>
+                    <span class="nav-text">
+                            Browse
+                     </span>
+                </a>
+            </li>
+            <li class="has-subnav">
+                <a href="#" class="line-icons">
+                    <span class="lnr lnr-star"></span>
+                    <span class="nav-text">
+                           Favorities
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="#" class="line-icons">
+                        <span class="lnr lnr-bookmark"></span>
+                    <span class="nav-text">
+                            Bookmarks
+                        </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="navbar navbar-inverse bs-dark">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <form class="navbar-form navbar-left form-horizontal" role="search">
+                <div class="input-group">
+                    <button type="submit" class="btn"><span class="lnr lnr-magnifier"></span></button>
+                    <input type="text" class="search-box" placeholder="What do you want to learn?">
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" class="navbar-img pull-left">
+                        <span class="profile-name">Uma</span>
+                        <span class="profile-id">umamaheshwarigm@gmail.com</span>
+                    </a>
+                    <img src="http://placehold.it/150x150" class="img-circle profile-img pull-right" alt="Profile Image" />
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Inbox</a></li>
+                        <li><a href="#">Followers</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Settings</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<section class="primary-container">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 no-padding">
+                <div class="channel-display">
+                    <div class="featured-row">
+                        <div class="week-featured">
+                            <div class="head-featured">
+                                <h4>THIS WEEK'S FEATURED PODCAST</h4> </div>
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#"> <img class="media-object" src="images/gimlet.jpg" alt="..."> </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Undone</h4>
+                                    <h5>Gimlet</h5>
+                                    <p>When big news happens, the world tunes in and then moves on. But often the stories we thought were over haven’t really ended. They were the beginning of something else. Undone is a new show from Gimlet Media that digs up the surprising things that happened when we weren’t looking. Hosted by Pat Walters.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 no-padding">
+                <div class="previous-featured">
+                    <div class="previous-featured-head">
+                        <h4>PREVIOUSLY FEATURED</h4> </div>
+                    <div class="previous-featured-list"> <img src="images/mixed-feel.jpg" alt=""> <img src="images/mixed-feel.jpg" alt=""> <img src="images/mixed-feel.jpg" alt=""> <img src="images/mixed-feel.jpg" alt=""> <img src="images/mixed-feel.jpg" alt=""> </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 no-padding">
+                <div class="top-chart">
+                    <div class="top-chart-section">
+                        <div class="list-group">
+                           <div class="previous-featured-head">
+                        <h4>TOP CHARTS</h4> </div>
+                            <button type="button" class="list-group-item" ng-repeat="r in [1,2,3,4,5,6,7,8]">
+                                <ul class="media-list" ng-class="{'first': $first}">
+                                    <li class="media">
+                                        <div class="media-left">
+                                            <a href="#"> <img class="media-object" src="images/serial.jpg" alt="..."> </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="channel-desc">
+                                                <h4>SERIAL</h4>
+                                                <p>This American Life</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="col-md-4 no-padding">
+                <div class="top-chart">
+                    <div class="top-chart-section">
+                        <div class="list-group">
+                           <div class="previous-featured-head">
+                        <h4>TRENDING NOW</h4> </div>
+                            <button type="button" class="list-group-item" ng-repeat="r in [1,2,3,4,5,6,7,8]">
+                                <ul class="media-list" ng-class="{'first': $first}">
+                                    <li class="media">
+                                        <div class="media-left">
+                                            <a href="#"> <img class="media-object" src="images/serial.jpg" alt="..."> </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="channel-desc">
+                                                <h4>SERIAL</h4>
+                                                <p>This American Life</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>

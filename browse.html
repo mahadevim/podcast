@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Podcaster</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+</head>
+<body>
+<nav class="main-menu">
+        <ul>
+            <li>
+                <a href="main.html" class="logo-img">
+                    <img src="images/logo.png" alt="">
+                    <span class="nav-text">
+                           PODCAST
+                    </span>
+                </a>
+            </li>
+            <li class="">
+                <a href="index.html" class="line-icons">
+                    <span class="lnr lnr-home"></span>
+                    <span class="nav-text">
+                           Home
+                   </span>
+                </a>
+            </li>
+            <li class="has-subnav active">
+                <a href="browse.html" class="line-icons">
+                    <span class="lnr lnr-film-play"></span>
+                    <span class="nav-text">
+                            Browse
+                     </span>
+                </a>
+            </li>
+            <li class="has-subnav">
+                <a href="#" class="line-icons">
+                    <span class="lnr lnr-star"></span>
+                    <span class="nav-text">
+                           Favorities
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="#" class="line-icons">
+                        <span class="lnr lnr-bookmark"></span>
+                    <span class="nav-text">
+                            Bookmarks
+                        </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="navbar navbar-inverse bs-dark">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <form class="navbar-form navbar-left form-horizontal" role="search">
+                <div class="input-group">
+                    <button type="submit" class="btn"><span class="lnr lnr-magnifier"></span></button>
+                    <input type="text" class="search-box" placeholder="What do you want to learn?">
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" class="navbar-img pull-left">
+                        <span class="profile-name">Uma</span>
+                        <span class="profile-id">umamaheshwarigm@gmail.com</span>
+                    </a>
+                    <img src="http://placehold.it/150x150" class="img-circle profile-img pull-right" alt="Profile Image" />
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Inbox</a></li>
+                        <li><a href="#">Followers</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Settings</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<section class="browse-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9">
+                <!-- Nav tabs -->
+                <div class="card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#new" aria-controls="home" role="tab" data-toggle="tab">Newest</a></li>
+                        <li role="presentation"><a href="#popular" aria-controls="profile" role="tab" data-toggle="tab">Popular</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="new">
+                            <div class="list-item-radios">
+                                <h3><a href="#" class="head-radio">Listen to the IOS Tutorials</a></h3>
+                                <ul class="list-inline list-unstyled">
+                                    <li><a href="#">by John Doe</a></li>
+                                    <li>Beginner</li>
+                                    <li>Nov 18, 2016</li>
+                                    <li>3h 15m</li>
+                                    <li><span class="lnr lnr-star"> </span><span class="lnr lnr-star"></span> <span class="lnr lnr-star"></span> <span class="lnr lnr-star"></span> <span class="lnr lnr-star"></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="popular">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/index.js"></script>
+</body>
+</html>
